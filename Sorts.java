@@ -5,6 +5,15 @@ public class Sorts{
   */
 
   public static void BubbleSort(int[] data){
-
+    int stop=data.length-1;
+    for(int j=0;j<data.length;j++){
+    for(int i=0;i<data.length-j-1;i++){
+      if(data[i]>data[i+1]){
+        int x = data[i];
+        data[i]=data[i+1];
+        data[i+1]=x;
+      }
+    }
   }
+}
 }

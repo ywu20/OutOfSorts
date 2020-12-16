@@ -1,11 +1,11 @@
+import java.util.Arrays;
 public class Sorts{
   /**Bubble sort of an int array.
   *@postcondition The array will be modified such that the elements will be in increasing order.
   *@param data  the elements to be sorted.
   */
 
-  public static void BubbleSort(int[] data){
-    int stop=data.length-1;
+  public static void bubbleSort(int[] data){
     for(int j=0;j<data.length;j++){
     for(int i=0;i<data.length-j-1;i++){
       if(data[i]>data[i+1]){
@@ -13,6 +13,7 @@ public class Sorts{
         data[i]=data[i+1];
         data[i+1]=x;
       }
+//System.out.println(Arrays.toString(data));
     }
   }
 }

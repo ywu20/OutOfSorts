@@ -40,6 +40,7 @@ public class Sorts{
          data[minIndex]=data[i];
          data[i]=min;
        }
+       //d.dp(data);
      }
    }
 

@@ -49,5 +49,14 @@ public class Sorts{
   *@param data - the elements to be sorted.
   */
    public static void insertionSort(int[] data){
+     for(int i=1;i<data.length;i++){
+       int move=data[i];
+       int j=i-1;
+       for(;j>=0 && move<data[j] ; j--){
+         data[j+1]=data[j];
+     }
+     //d.dp(""+move);
+     data[j+1]=move;
    }
+}
 }

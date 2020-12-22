@@ -22,12 +22,15 @@ int a = rng.nextInt() % 1000;
           randData[i]=a;
         }
       }else if(args[2].equals("sorted")){
-	      for(int i=0;i<randData.length;i++){
-          randData[i]=(int)(i*1000 * Math.random());
+        randData[0]=(int)( 100 * Math.random());
+	      for(int i=1;i<randData.length;i++){
+          randData[i]=randData[i-1]*2;
         }
       }else if(args[2].equals("reversed")){
-	      for(int i=0;i<randData.length;i++){
-          randData[i]=(int)((randData.length-i) * 1000 * Math.random());
+        randData[0]=(int)( 1000000 * Math.random());
+	      for(int i=1;i<randData.length;i++){
+          randData[i]=randData[i-1]/2;
+          System.out.println(randData[i]);
         }
       }
 

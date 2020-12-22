@@ -30,7 +30,6 @@ int a = rng.nextInt() % 1000;
         randData[0]=(int)( 1000000 * Math.random());
 	      for(int i=1;i<randData.length;i++){
           randData[i]=randData[i-1]/2;
-          System.out.println(randData[i]);
         }
       }
 
